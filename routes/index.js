@@ -69,7 +69,7 @@ var usr=require('dao/dbConnect');
  
          usr.insertFun(client,req.body.username ,req.body.password2, function (err) {
                if(err) throw err;
-               res.send('注册成功');
+               res.redirect('/home');
          });
      });
  
